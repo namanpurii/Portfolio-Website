@@ -1,0 +1,148 @@
+<!--With reference to Intermediate CSS Module from Angela Yu's WebDev Course-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naman Puri - A Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- <div>
+        <img src="images/cloud.png" alt="cloud-image">
+        <h1>I'm Naman.</h1>
+        <p>A programmer</p>
+        <img src="images/cloud.png" alt="cloud-image">
+        <img src="images/mountain.png" alt="mountain-image">
+    </div> -->
+    <!--div tag stands for content division element, it is only there for you to structure and divide your content. We can format divs with the help of CSS-->
+    <!--We have observed that tags like Heading(h1 through h6), Paragraphs(<p>), Divisions(<div>), List and List items(<ol>, <ul>, <li>,etc.), Forms<form>
+      take up the entire width of the document. These elements or tags are called block elements for the same reason as they
+      block up the entire width of the document. WHAT IS THE SOLUTION ??
+    -->
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
+        <h1>I'm Naman.</h1>
+        <h3>A <span class="pro">pro</span>grammer</h3>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
+        <img class="mountain" src="images/mountain.png" alt="mountain-image">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img class="profile-pic" src="images/namanpuri_pic-modified.png" alt="profile-pic">
+          <h2>Hello!</h2>
+          <p>I am Naman Puri, a front end developer and designer. I have keen interest in problem solving and design.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="skill1" src="images/problem-solving.jpg" alt="problem-solving">
+            <h3>Problem Solving</h3>
+            <p>I frequently practice questions on platforms like LeetCode, InterviewBit, Codeforces and HackerRank which helped me achieve a 5-star rating in C and C++ on HackerRank and I have solved 150+ questions on LeetCode.</p>
+          </div>
+          <div class="skill-row">
+            <img class="skill2" src="images/browser.png" alt="web-dev">
+            <h3>Front-End Development</h3>
+            <p>I have a good practice with languages like HTML, CSS, BootStrap and JavaScript</p>
+          </div>
+          <div class="skill-row">
+            <img class="skill3" src="images/product-des.png" alt="product-design">
+            <h3>Product Design</h3>
+            <p>I have a 2+ years experience in working with Blender which has helped me ideate and build 3D models of various products</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you are a certified geek, 7 days a week.</h3>
+          <p>Feel free to contact me! and don't miss to check out all of my platforms below</p>
+          <p><br></p>
+          <a href = "mailto:puri2001naman@gmail.com"><button class="btn">CONTACT ME</button></a>
+          <a href="images/NamanPuri-Resume-1col2.pdf" title=""  target="_blank" download><button class="btn">DOWNLOAD CV</button></a>
+        </div>
+      </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/naman-purii/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/namanpurii">GitHub</a>
+        <a class="footer-link" href="https://leetcode.com/namanpurii/">LeetCode</a>
+        <p style="color: white; font-size: small; padding-top: 25px;">© 2023 Naman Puri.</p>
+    </div>
+    <!--    The problem can be solved through inline display elements. <span> is an inline display element, unlike <div> which is a block display element.
+            <span> element, like <divs> dont do much without CSS    -->
+    <!--
+        Common Inline Elements : 
+        Spans(<span>)
+        Images(<img>)
+        Anchors(<a>)
+        
+        By default buttons(<button>) are inline-block
+    -->
+    <!-- So why dont we use <span> instead of <p> cuz clearly we can see they are more flexible. This is because. We cant change
+    the width of <span> tag through CSS. While we can do for <p>(i.e., block element). But even after we decrease the width
+    a block display element, it still wont let any other element to sit against/besides it. But we have the
+    flexibility to change the property of an element from block to inline by changing the 'display' parameter -->
+    <!--but again once you change block to inline you loose the ability to change its width. and if a block element cant be 
+    changed, you have the ability to change its width but you cant let any other element to sit next to it. 
+    Instead we can set, display : inline-block; which gives us the best of both worlds.-->
+
+    <!-- Design 101
+    Keep in mind heirarchy, layout, alignment, white spacing and audience while designing UI -->
+
+    <!-- CSS Positioning : Default rules on how things get rendered on the screen
+    1. Content is everything: Content is the first thing which determines how large things get displayed. Eg: h1 will occupy more height as compared to a <p> tag
+    2. Order comes from HTML code: Order of elements comes from the HTML code. Changing the order will change the positioning.
+    3. Children Sit on Parents: Refers to nesting tags. 
+        Eg:
+        <div>
+            <p>A <span class="pro">pro</span>grammer</p>
+        </div>
+        Here <p> sits on <div> and <span> sits on <p> -->
+    
+    <!-- Position Property:
+    1. Static : By default 
+    2. Relative : Relative to previous position of the element, has 4 coordinates top, bottom, left and right. top: 100px; would move the object down by 100 px relative to its top edge.
+    3. Absolute : Positioning element relative to its parent. 
+    4. Fixed: To fix position of element while scrolling -->
+
+    <!--Display Property:
+    1. Block
+    2. Inline
+    3. Inline-Block
+    4. None
+    
+    4. display: None; takes the element out of the flow of the document as if it never existed. It is useful when in a quiz you want
+    things to appear after a certain action, or you can do, visibility: hidden; which hides the element keeping it in-flow i.e. keeping
+    its position intact but it is not visible.
+    -->
+    <!--Look at Lecture 49 to discover 2 ways to center elements using CSS
+    1. Using
+        body{
+            text-align:center;
+        }
+        This aligns the inline and block elements in the center of the webpage iff the width of any of the elements is not set
+        i.e. not augmented or not changed/specified
+    2. If the width of a <p> tag is changed to lets say 10% i.e. width: 10%;
+        Then text-align wont center this element
+        To solve this issue
+        we use margin:auto; property to center the element
+        Eg:
+        p{
+            width:10%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    -->
+    <!--FONT STYLING in CSS
+        Font Families: Serif(with feet) and Sans-Serif(without feet)
+        CSS font properties:
+        "font-family" command majorly has 6 properties, serif(default), sans-serif, monospace, cursive, fantasy, inherit out of which first 3 are useful
+        monospace: has equally spaced characters, have high readability
+        Default Serif Font=  Times Font
+        Default Sans-Serif Font = Arial
+    -->
+</body>
+</html>

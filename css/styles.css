@@ -1,0 +1,156 @@
+.top-container{
+    
+    background-color:#EAFDFC;
+    position: relative;
+    padding-top: 210px;
+}
+
+.middle-container{
+    position: relative;
+}
+
+.profile-pic{
+    width:200px;
+    margin-top: 50px;
+    /* position: relative; */
+}
+
+.profile{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.skill1{
+    width:25%;
+    float: left; /*makes the image float to the left of the text and makes the text wrap around it */
+    margin-right: 30px;
+}
+
+.skill2{
+    width:20%;
+    float: left;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.skill3{
+    width:20%;
+    float: left;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.skills{
+    margin-top: 50px;
+}
+body{
+    margin: 0;
+    text-align: center;
+    /*font-family: 'Merriweather', sans-serif;or you can have a stack of fallbacks based on the order For Eg: font-family: Helevetica, Arial, sans-serif;*/
+}
+
+hr{
+    border-style: dotted none none none;
+    border-width: 7px;
+    width: 5%;/*can also be a value in px*/
+    border-color: #e0e3e3;
+}
+h1{
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Poppins';
+    color: #66BFBF;
+    font-weight: 500;
+}
+
+.pro{
+    text-decoration: underline;
+}
+p{
+    font-size: 15px;
+    font-family: 'Merriweather'
+}
+
+h2{
+    font-size: 35px;
+    font-family: 'Poppins';
+    color: #66BFBF;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: #66BFBF;
+    font-weight: 500;
+}
+.bottom-cloud{
+    position: absolute;/*to take the cloud out of the flow  */
+    /*if the parents position is not set as relative..this element would move relative to the <body>(by default). SO we will set
+    the position of our <div> as relative. */
+    left:300px;
+    bottom: 300px;
+}
+
+.top-cloud{
+    position: absolute;
+    /*absolute positioning takes an element out of the flow of the document. As if it were not there. But relative positioning 
+    doesnt take the element out of the flow.i,e, doesnt disturb the layout of the document. It leaves its ghost there*/
+    right: 350px;
+    top: 100px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 50px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.contact-me{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #66BFBF;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 4px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover {opacity: 1}
+
+.bottom-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #66BFBF;
+}
+
+.footer-link:link,.footer-link:visited {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+    font-weight: 500;
+  }
+  
+  .footer-link:hover,.footer-link:active {
+    opacity: 1;
+  }
